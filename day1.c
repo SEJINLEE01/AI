@@ -2,5 +2,7 @@
 
 int main(){
     int a = 20;
-    printf("%d",a);
+    int b = 30;
+    int c = a + b;
+    printf("%d",c);
 }
