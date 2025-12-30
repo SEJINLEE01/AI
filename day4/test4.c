@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int get_num(){
+    int num;
+    printf("양수 입력 : ");
+    scanf("%d",&num);
+    return num;
+}
+
+int main(){
+    int result =get_num();
+    printf("반환값 : %d\n",result);
+}
