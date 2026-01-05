@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//히스테리시스 개념
 int main(){
     int N;
     double* battery;
@@ -11,7 +11,7 @@ int main(){
     battery = (double*)malloc(sizeof(double)*N);
 
     for(int i=0;i<N;i++){
-        printf("%d번째, 배터리의 잔량은? : ",i+1);
+        printf("%d번째 배터리의 잔량은? : ",i+1);
         scanf("%lf",&battery[i]);
     }
     printf("\n");
