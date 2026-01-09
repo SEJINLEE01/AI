@@ -3,10 +3,6 @@
 #include <algorithm>
 using namespace std;
 
-bool compare(const pair<int, bool>& a, const pair<int, bool>& b) {
-    return a.first > b.first;
-}
-
 int main() {
     int T;
     cin >> T;
@@ -14,34 +10,31 @@ int main() {
     int N, M;
 
     for (int i = 0;i < T;i++) {
-        queue<pair<int, bool>> Q;
-        deque<pair<int, bool>> DQ;
         cin >> N >> M;
+        queue<pair<int, int>> Q; // 인덱스, 우선순위
+        priority_queue<int> pq; //우선수위로 나열하는 우선순위 큐
+
         for (int j = 0;j < N;j++) {
             int V;
             cin >> V;
-            if (j == M) Q.push(make_pair(V, true));
-            else Q.push(make_pair(V, false));
-
-            DQ.push_back(Q.front());
+            Q.push(make_pair(j, V));
+            pq.push(V);
         }
+        int count = 0;
 
-        sort(DQ.begin(), DQ.end(), compare);
-
-        for (int j = 0;j < N;j++) {
-            if (Q.front() != DQ.front())
-            {
-                j--;
-                Q.push(Q.front());
-                Q.pop();
+        while (!Q.empty()) {
+            int index = Q.front().first;
+            int value = Q.front().second;
+            Q.pop();
+            if (pq.top() == value) {
+                pq.pop();
+                count++;
+                if (M == index) {
+                    cout << count << "\n";
+                    break;
+                }
             }
-        }
-
-        for (int j = 0;j < N;j++) {
-            if (Q.front().second) {
-                cout << j + 1 << "\n";
-                break;
-            }
+            else Q.push({ index, value });
         }
     }
 }
