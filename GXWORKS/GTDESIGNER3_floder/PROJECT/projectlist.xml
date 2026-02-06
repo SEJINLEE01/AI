@@ -1,0 +1,29 @@
+<diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+  <DSPROJECT>
+    <D_Project diffgr:id="D_Project1" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+      <iID>2</iID>
+      <szName>auto</szName>
+      <dtCreateDate>2026-02-05T09:18:59.22787+09:00</dtCreateDate>
+      <iProjectAttributeID>12</iProjectAttributeID>
+      <bUserManage>false</bUserManage>
+    </D_Project>
+    <D_Project diffgr:id="D_Project2" msdata:rowOrder="1" diffgr:hasChanges="inserted">
+      <iID>3</iID>
+      <szName>backup</szName>
+      <dtCreateDate>2026-02-06T09:05:23.2582121+09:00</dtCreateDate>
+      <iProjectAttributeID>12</iProjectAttributeID>
+      <bUserManage>false</bUserManage>
+    </D_Project>
+    <D_Project diffgr:id="D_Project3" msdata:rowOrder="2" diffgr:hasChanges="inserted">
+      <iID>1</iID>
+      <szName>base_prj</szName>
+      <dtCreateDate>2026-02-06T09:06:09.3479271+09:00</dtCreateDate>
+      <iProjectAttributeID>12</iProjectAttributeID>
+      <bUserManage>false</bUserManage>
+    </D_Project>
+    <D_DBVersion diffgr:id="D_DBVersion2" msdata:rowOrder="0" diffgr:hasChanges="inserted">
+      <iSupportVersion>1</iSupportVersion>
+      <iCreateVersion>1</iCreateVersion>
+    </D_DBVersion>
+  </DSPROJECT>
+</diffgr:diffgram>
